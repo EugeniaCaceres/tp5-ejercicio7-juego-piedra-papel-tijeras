@@ -18,5 +18,59 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Piedra, papel y tijeras</title>
   </head>
-  <body></body>
+  <body>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Titulo</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="game">
+      <!--Title -->
+      <div class="title">Piedras Papel y tijeras</div>
+
+      <div class="move">Elige una opción.</div>
+
+      <!--Options available to player to play game -->
+      <div class="options">
+        <button class="rock">Piedras</button>
+        <button class="paper">Papel</button>
+        <button class="scissor">tijeras</button>
+      </div>
+
+      <!--Final result of game -->
+      <div class="result"></div>
+
+      <!--Reload the game -->
+      <button class="reload"></button>
+    </section>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>
