@@ -26,7 +26,7 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <section class="modal-dialog text-center">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -48,16 +48,14 @@
             </button>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
-    <section class="game">
-      <!--Title -->
-      <div class="title">Piedras Papel y tijeras</div>
+    <section class="container game text-center">
+      <h1 class=" my-3">Piedra, Papel y tijeras</h1>
+      <img src="/img/imagen-ppt.png" alt="Imagen de manos de piedras, papel y tijeras" width="200"></img>
+      <h2 class="move">Elige una opción.</h2>
 
-      <div class="move">Elige una opción.</div>
-
-      <!--Options available to player to play game -->
       <div class="options">
         <button
           class="rock"
@@ -66,7 +64,7 @@
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
-          Piedra
+          Piedra &#x1F44A;
         </button>
         <button
           class="paper"
@@ -75,7 +73,7 @@
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
-          Papel
+          Papel &#x1F590;
         </button>
         <button
           class="scissor"
@@ -84,11 +82,10 @@
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
-          Tijeras
+          Tijeras &#x270C;&#xFE0F;
         </button>
       </div>
 
-      <!--Final result of game -->
       <h3 class="result"></h3>
     </section>
 
