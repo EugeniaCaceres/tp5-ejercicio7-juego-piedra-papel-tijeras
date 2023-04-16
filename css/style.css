@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  color: rgb(213, 20, 220);
+  text-shadow: 0 0 5px rgb(250, 255, 180),
+  0 0 10px rgb(255, 190, 255);
+}
+
+h2{
+	font-family: 'Nova Oval', cursive;
+}
+/* centrar todos los elementos */
+.game {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(236, 203, 255);
+}
+
+/* tres botones en una misma linea */
+.options {
+  display: flex;
+  width: 50vw;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+/* estilo de los botones */
+.rock,
+.paper,
+.scissor {
+  padding: 0.8rem;
+  width: 100px;
+  border-radius: 10px;
+  background: rgb(255, 42, 227);
+  outline: none;
+  border-color: rgb(209, 23, 255);
+  border: none;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.move {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 612px) {
+  .title {
+    text-align: center;
+  }
+  .score {
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+  }
+  .options {
+    width: 100vw;
+  }
+}
+
+/* Modal */
+.modal-body, .modal-footer {
+  color: rgb(34, 2, 70);
+  background-color: rgb(214, 144, 255);
+  font-family: 'Bebas Neue', cursive;
+}
+
+.modal-header {
+  font-family: "Press Start 2P", cursive;
+text-align: center;
+  color: rgb(247, 7, 255);
+}
